@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* { padding: 0; margin: 0; }
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #212121;
+}
+
+a, a:visited { color:grey; text-decoration: none; }
+a:hover { color: salmon; }
+
+img {
+    width: 100%;
+}
+h1 {
+
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+
+    top:0;
+    left:0;
+    width: 100%;
+    /* min-width: 890px; */
+    height: 40px;
+    padding:20px 0;
+    /*background-color:rgb(252, 242, 105,0.8);*/
+}
+
+ul {
+    float: right;
+    padding: 0 30px 0 0;
+}
+
+li {
+    float: left;
+    color: white;
+    list-style: none;
+    padding: 5px 80px;
+}
+
+header {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+footer {
+    height: 15px;
+    padding: 40px 0;
+    margin: 40px 0 0 0;
+    background-color: #C6D0D2;
+    text-align: center;
+}
+
+#frame {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav-title {
+    float: left;
+    width: 200px;
+    padding: 5px 50px;
+    
+}
+#nav-title a.logo{
+    display: block;
+    width:50px;
+    height: 50px;
+    color:transparent;
+    text-indent: -9999px;
+    font-size: 0pt;
+    background-image: url('./images/logo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.header-title {
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    width: 700px;
+    color: #D9E3E2;
+    font-size: 40pt;
+    /* text-align: center; */
+  
+}
+header span{
+    position: absolute;
+    display: block;
+    top:470px;
+    left: 50px;
+}
+#video{
+    width:100%;
+    height: 100%;
+    background-image:url('./images/1.png');
+    background-size: cover;
+    background-position: center;
+    top: 80px;
+}
+#video-wrap{
+    padding: 110px 350px;
+}
+#play{
+    width: 720px;
+    height: 480px;
+}
+#content{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:100%;
+    left:0; 
+}
+#content-ui{
+    width:100%;
+    height: 100%;
+    background-image:url('./images/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#content-explain{
+    position: absolute;
+    top:40%;
+    left:50px;
+    width:40%;
+    height: 50%;
+}
+
+.content-title {
+    color: white;
+    font-weight: normal;
+    padding: 14px 0;
+    font-size: 15pt;
+    text-align: left;
+    left: 50px;
+}
+
+.title-color{
+    color: #fff66e;
+    display: block;
+    font-weight: bold;
+    font-size: 17pt;
+}
+.content-article {
+ 
+    padding: 10px 0 0 0;
+    width: 50%;
+    color: white;
+    font-weight: lighter;
+    font-size: 10pt;
+    text-align: left;
+}
+
+.content-article span{
+    margin-top: 26px;
+    display: block;
+    font-weight: normal;
+    font-size: 10pt;
+    color: #fff66e;
+}
+#service{
+    width:100%;
+    height: 100%;
+    background-image:url('./images/3-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#design-concept{
+    position: relative;
+    width:100%;
+    height: 3800px;
+    /*padding-top: 10%;*/
+    background-image:url('./images/concept01.png');
+
+}
+.cycle-slideshow{
+    top:150px;
+    left: 225px;
+    width: 720px;
+    height: 480px;
+}
+
+    /*
+    #design-concept h2.concept-title{
+        margin-left: 50px;
+        color: lightgray;
+        font-size: 50pt;
+        font-weight: bold;
+        text-align: left;
+
+    }
+    #design-concept ul{
+        margin: 0 auto;
+        padding: 0;
+        width:100%;
+    }
+    #design-concept ul li
+    {
+        margin: 70px 0 0 55px;
+        padding: 0;
+        color: black;
+    }
+    #design-concept span.bold{
+        margin-right: 50px;
+    }
+
+    #design-concept li.concept_photo{
+        width: 1920px;
+        height: 6911px;
+        background-image:url('./images/concept.png');
+    }
+    */
+
+/*
+#design-concept ul#color_concept li:last-child{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    height: 500px;
+
+}
+#design-concept ul#color_concept li:last-child p{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+
+   
+}
+#design-concept ul#color_concept li span#yellow{
+    position: absolute;
+    top:20%;
+    left:25%;
+    display: block;
+    width:250px;
+    height:250px;
+    background-color: #fff66e;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 200pt;
+}
+#design-concept ul#color_concept li span#black{
+    position: absolute;
+    top:20%;
+    right:25%;
+    display: block;
+    width:250px;
+    height:250px;
+    background-color: #363636;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 200pt;
+}
+
+#design-concept ul li span{
+    font-weight: bold;
+    
+}
+
+*/
